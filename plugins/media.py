@@ -2,6 +2,7 @@ from pyrogram import Client, filters, enums
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InputMediaPhoto, InputMediaDocument, InputMediaVideo, InputMediaAnimation, InputMediaAudio
 from config import Config
+from pyromod.exceptions.listener_timeout import ListenerTimeout
 
 PACK = filters.animation | filters.document | filters.video | filters.audio | filters.photo
 
