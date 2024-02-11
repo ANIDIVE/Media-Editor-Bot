@@ -1,10 +1,11 @@
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-START_MSG = """**Hi {}, Welcome to Media Editor bot
-You can edit/relace the documents,videos,gifs,audios,photos etc… Of Your Channels easily By Using Me
+START_MSG = """**Hi {}, Welcome to Media Editor bot!**
 
-For more info on Uuage hit - /help"""
+You can edit/relace the documents, videos, gifs, audios, photos etc… Of Your Channels easily By Using Me
+
+For more info hit - /help"""
 
 
 HELP_MSG = """
@@ -27,4 +28,6 @@ async def start(client, message):
 
 @Client.on_message(filters.command('help') & filters.private)
 async def help(client, message):
-    await message.reply_text(text=HELP_MSG)   
+    await message.reply_text(
+        text=HELP_MSG,
+         quote=True)   
