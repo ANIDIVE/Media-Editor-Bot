@@ -43,6 +43,11 @@ python3 main.py
 </p>
 </details>
 
+## VISITORS
+
+<img src="https://count.getloli.com/get/@:ANIDIVEMedia-editor-bot" alt=":ANIDIVEMedia-editor-bot" />
+
+
 
 ## Thanks to
 
